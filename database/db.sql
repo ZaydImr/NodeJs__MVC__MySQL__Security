@@ -14,7 +14,7 @@ CREATE Table links(
     id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(150) NOT NULL,
     url VARCHAR(255) NOT NULL,
-    desciption TEXT,
+    description TEXT,
     user_id INT,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     constraint fk_user_link FOREIGN KEY (user_id) REFERENCES users(id)
