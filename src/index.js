@@ -9,6 +9,8 @@ const passport = require('passport');
 
 const { database } = require('./keys')
 
+require('dotenv').config();
+
 // initializationes 
 const app = express();
 require('./lib/passport');
