@@ -1,8 +1,13 @@
 <div class="container p-4">
+    {{#if links.length}}
+            <a href="/links/add" class="btn btn-primary mb-4">
+                Add Link
+            </a>
+        {{/if}}
     <div class="row">
         {{#each links}}
             <div class="col-md-3">
-                <div class="card text-center p-2">
+                <div class="card text-center p-4">
                     <a href="{{this.url}}" target="_blank"><h4 class="card-title text-uppercase">{{title}}</h4></a>
                     <p class="m-2">{{description}}</p>
                     <p>{{timeago created_at}}</p>

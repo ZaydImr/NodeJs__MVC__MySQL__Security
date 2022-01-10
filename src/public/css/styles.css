@@ -1,0 +1,16 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+}
+.masthead {
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    min-height: 30rem;
+    padding-top: 8rem;
+    background: url('/img/backgroud.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
